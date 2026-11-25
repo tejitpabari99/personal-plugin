@@ -1,0 +1,1 @@
+{"name":"personal-plugin","description":"Tejit's personal skills","owner":{"name":"Tejit Pabari","url":"https://github.com/tejitpabari99"},"plugins":[{"name":"personal-plugin","source":"./plugins/personal-plugin","description":"Personal skills: Jira, TickTick, Granola import, Drive index/read, plus Nonprofit and Onolys context.","category":"productivity"}]}
