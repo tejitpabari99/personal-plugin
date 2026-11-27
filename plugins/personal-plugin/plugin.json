@@ -1,0 +1,22 @@
+{
+  "name": "personal-plugin",
+  "version": "0.2.0",
+  "license": "MIT",
+  "description": "Personal skills: Jira, TickTick, Granola import, Drive index/read, plus Nonprofit and Onolys context.",
+  "author": { "name": "Tejit Pabari" },
+  "keywords": [],
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Personal Plugin",
+        "shortDescription": "Tejit's workflow skills",
+        "longDescription": "Jira (Onolys), TickTick, Granola import, Google Drive index/read, with Nonprofit and Onolys context.",
+        "developerName": "Tejit Pabari",
+        "category": "Productivity",
+        "defaultPrompt": ["Create Onolys Jira tasks for these items."],
+        "capabilities": []
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+name: CI
+on:
+  push:
+  pull_request:
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Zip packaging test
+        run: bash scripts/test-zip-plugin.sh
+      - name: Granola tests
+        run: |
+          python3 -m pip install pytest
+          python3 -m pytest -q plugins/personal-plugin/skills/import-granola-meetings/scripts/test_granola.py
