@@ -34,3 +34,13 @@ Atlassian Rovo, TickTick, Granola, Google Drive / Docs / Sheets, Gmail, Google C
 ```
 codex plugin marketplace add tejitpabari99/personal-plugin
 ```
+
+**ChatGPT (upload)**: build the zip, then upload `dist/personal-plugin-<version>.zip` to ChatGPT:
+```
+scripts/zip-plugin.sh
+```
+The zip has a single top-level `personal-plugin/` folder with a root `plugin.json`. ChatGPT limits the subtitle (`shortDescription`) to 30 characters; the script fails if it is longer.
+
+### Releasing a new version
+
+Bump `version` in the three plugin manifests (`plugins/personal-plugin/plugin.json`, `.claude-plugin/plugin.json`, `.codex-plugin/plugin.json`), then run `scripts/zip-plugin.sh`. It fails if the versions differ.
